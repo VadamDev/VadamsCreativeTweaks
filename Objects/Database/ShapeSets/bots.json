@@ -1,0 +1,147 @@
+{
+	"partList": [
+		{
+			"uuid": "767a3121-2c31-473c-a5ab-27e188fdd55a",
+			"name": "obj_craftbot_dressbot",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshMap": {
+							"char_dressbot_mat": {
+								"textureList": [
+									"$SURVIVAL_DATA/Character/Char_Dressbot/char_Dressbot_dif.tga",
+									"$SURVIVAL_DATA/Character/Char_Dressbot/char_Dressbot_asg.tga",
+									"$SURVIVAL_DATA/Character/Char_Dressbot/char_Dressbot_nor.tga"
+								],
+								"material": "SkelAnimDifAsgNor"
+							}
+						},
+						"animationList": [
+							{
+								"name": "Unfold",
+								"file": "$SURVIVAL_DATA/Character/Char_Dressbot/Animations/ani_char_dressbot_unfold.dae"
+							},
+							{
+								"name": "Idle",
+								"file": "$SURVIVAL_DATA/Character/Char_Dressbot/Animations/ani_char_dressbot_idle.dae"
+							},
+							{
+								"name": "Craft_start",
+								"file": "$SURVIVAL_DATA/Character/Char_Dressbot/Animations/ani_char_dressbot_craft_start.dae"
+							},
+							{
+								"name": "Craft_loop01",
+								"file": "$SURVIVAL_DATA/Character/Char_Dressbot/Animations/ani_char_dressbot_craft_loop01.dae"
+							},
+							{
+								"name": "Craft_loop02",
+								"file": "$SURVIVAL_DATA/Character/Char_Dressbot/Animations/ani_char_dressbot_craft_loop02.dae"
+							},
+							{
+								"name": "Control_doors",
+								"file": "$SURVIVAL_DATA/Character/Char_Dressbot/Animations/ani_char_dressbot_opendoors_add.dae"
+							},
+							{
+								"name": "Craft_finish",
+								"file": "$SURVIVAL_DATA/Character/Char_Dressbot/Animations/ani_char_dressbot_craft_finish.dae"
+							}
+						],
+						"mesh": "$SURVIVAL_DATA/Character/Char_Dressbot/char_dressbot.dae",
+						"maxViewDistance": 1000.0
+					}
+				]
+			},
+			"color": "df7f01",
+			"box": {
+				"x": 8,
+				"y": 8,
+				"z": 5
+			},
+			"scripted": {
+				"filename": "$SURVIVAL_DATA/Scripts/game/interactables/Wardrobe.lua",
+				"classname": "Wardrobe",
+				"data": {}
+			},
+			"rotationSet": "PropY",
+			"sticky": "-Y",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"density": 7,
+				"durability": 7,
+				"friction": 6,
+				"buoyancy": 1
+			},
+			"flammable": false
+		},
+		{
+			"uuid": "2af00456-b22e-4743-b338-a91934aba7c5",
+			"name": "obj_craftbot_cookbot",
+			"renderable": {
+				"lodList": [
+			{
+		"mesh": "$SURVIVAL_DATA/Character/Char_Cookbot/char_cookbot.dae",
+		"subMeshMap": {
+			"cookbot": {
+				"material": "SkelAnimDifAsgNor",
+				"textureList": [
+					"$SURVIVAL_DATA/Character/Char_Cookbot/char_cookbot_dif.tga",
+					"$SURVIVAL_DATA/Character/Char_Cookbot/char_cookbot_asg.tga",
+					"$SURVIVAL_DATA/Character/Char_Cookbot/char_cookbot_nor.tga"
+				]
+			},
+			"screen": {
+				"material": "SkelUVAnimDifAsgNor",
+				"textureList": [
+					"$SURVIVAL_DATA/Character/Char_Craftbot/char_craftboticons_dif.tga",
+					"$SURVIVAL_DATA/Character/Char_Craftbot/char_craftboticons_asg.tga",
+					"$SURVIVAL_DATA/Character/Char_Craftbot/char_craftboticons_nor.tga"
+				],
+				"custom": {
+					"uv0": { "u": 0.25, "v": 0.25 }
+				}
+			}
+		},
+		"animationList": [
+
+			{ "name": "unfold",					"file": "$SURVIVAL_DATA/Character/Char_Cookbot/Animations/ani_char_cookbot_unfold.dae" },
+			{ "name": "idle",					"file": "$SURVIVAL_DATA/Character/Char_Cookbot/Animations/ani_char_cookbot_idle.dae", "looping": true },
+			{ "name": "idlespecial01",			"file": "$SURVIVAL_DATA/Character/Char_Cookbot/Animations/ani_char_cookbot_idlespecial01.dae", "looping": true },
+			{ "name": "idlespecial02",			"file": "$SURVIVAL_DATA/Character/Char_Cookbot/Animations/ani_char_cookbot_idlespecial02.dae", "looping": true },
+
+			{ "name": "craft_start",			"file": "$SURVIVAL_DATA/Character/Char_Cookbot/Animations/ani_char_cookbot_craft_start.dae" },
+			{ "name": "craft_loop01",			"file": "$SURVIVAL_DATA/Character/Char_Cookbot/Animations/ani_char_cookbot_craft_loop01.dae", "looping": true  },
+			{ "name": "craft_loop02",			"file": "$SURVIVAL_DATA/Character/Char_Cookbot/Animations/ani_char_cookbot_craft_loop02.dae", "looping": true  },
+			{ "name": "craft_loop03",			"file": "$SURVIVAL_DATA/Character/Char_Cookbot/Animations/ani_char_cookbot_craft_loop03.dae", "looping": true  },
+			{ "name": "craft_finish",			"file": "$SURVIVAL_DATA/Character/Char_Cookbot/Animations/ani_char_cookbot_craft_finish.dae" },
+
+			{ "name": "aimbend_updown",			"file": "$SURVIVAL_DATA/Character/Char_Cookbot/Animations/ani_char_cookbot_bend_updown.dae" },
+			{ "name": "aimbend_leftright",		"file": "$SURVIVAL_DATA/Character/Char_Cookbot/Animations/ani_char_cookbot_bend_leftright.dae" }
+		],
+		"maxViewDistance": 1000.0
+	}]
+			},
+			"color": "df7f01",
+			"hull": {
+				"x": 3,
+				"y": 6,
+				"z": 4,
+				"col": "$SURVIVAL_DATA/Objects/Collision/char_cookbot_col.obj"
+			},
+			/*"scripted": {
+				"filename": "$SURVIVAL_DATA/Scripts/game/interactables/Crafter.lua",
+				"classname": "Cookbot"
+			},*/
+			"rotationSet": "PropY",
+			"sticky": "-Y",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"density": 7,
+				"durability": 7,
+				"friction": 6,
+				"buoyancy": 1
+			},
+			"flammable": false,
+			"carryItem": true
+		}
+	]
+}

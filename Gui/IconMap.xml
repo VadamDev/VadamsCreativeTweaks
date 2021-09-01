@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Resource" version="1.1">
+    <Resource type="ResourceImageSet" name="ItemIconsSet0">
+        <Group name="ItemIcons" texture="IconMap.png" size="96 96">
+            <Index name="Empty">
+                <Frame point="0 0"/>
+            </Index>
+            <Index name="767a3121-2c31-473c-a5ab-27e188fdd55a">
+                <Frame point="0 0"/>
+            </Index>
+            <Index name="2af00456-b22e-4743-b338-a91934aba7c5">
+                <Frame point="96 0"/>
+            </Index>
+            <Index name="76331bbf-abbd-4b8d-bb54-f721a5b6193b">
+                <Frame point="192 0"/>
+            </Index>
+            <Index name="38ec258d-c644-4f08-8635-3f7434c884dd">
+                <Frame point="288 0"/>
+            </Index>
+            <Index name="be29592a-ef58-4b1d-b18c-895023abd27f">
+                <Frame point="384 0"/>
+            </Index>
+            <Index name="a575f255-b478-4487-bbef-0ef2c39d9ae8">
+                <Frame point="480 0"/>
+            </Index>
+            <Index name="a575f255-b478-4487-bbef-0ef2c39d9ae7">
+                <Frame point="576 0"/>
+            </Index>
+            <Index name="4c1ac025-f34e-4075-b9c6-54596664bc1a">
+                <Frame point="672 0"/>
+            </Index>
+            <Index name="9fae7e79-85bb-432d-9dca-d6c777cf16d1">
+                <Frame point="768 0"/>
+            </Index>
+            <Index name="c8b1bc7b-304e-44ce-9ca1-937b8e69d70c">
+                <Frame point="864 0"/>
+            </Index>
+            <Index name="8fd2cf31-70b3-499a-bfb0-7e3d2c580258">
+                <Frame point="0 96"/>
+            </Index>
+            <Index name="8694192c-d91b-444c-a184-910911bbb354">
+                <Frame point="96 96"/>
+            </Index>
+            <Index name="5eb8975b-0acf-43a7-ab4e-62ce661c0df7">
+                <Frame point="192 96"/>
+            </Index>
+            <Index name="bd597ac9-6640-43ba-9bd8-ed584a794f13">
+                <Frame point="288 96"/>
+            </Index>
+            <Index name="847daf20-02bf-4170-8699-9ab106acd29a">
+                <Frame point="384 96"/>
+            </Index>
+            <Index name="c96ab903-f238-4bae-a614-28a758716d00">
+                <Frame point="480 96"/>
+            </Index>
+            <Index name="4146d3bf-3e27-4f03-84a9-bc477c045861">
+                <Frame point="576 96"/>
+            </Index>
+            <Index name="f08d772f-9851-400f-a014-d847900458a7">
+                <Frame point="672 96"/>
+            </Index>
+            <Index name="d0afb527-e786-4a22-a907-6da7e7cba8cb">
+                <Frame point="768 96"/>
+            </Index>
+            <Index name="90dbaebf-8ea1-4a5a-8f6f-86ddde77c6c8">
+                <Frame point="864 96"/>
+            </Index>
+            <Index name="fcfae5e2-1df9-47d8-bb9a-30bec9b5b1f5">
+                <Frame point="0 192"/>
+            </Index>
+            <Index name="ff09d816-843a-43e9-aab6-dc35e73787fd">
+                <Frame point="96 192"/>
+            </Index>
+            <Index name="d2e0d468-858b-4a8b-98b4-8c5900309aef">
+                <Frame point="192 192"/>
+            </Index>
+            <Index name="a553bf2f-3a66-404a-b4c6-ce9e7b73f9d4">
+                <Frame point="288 192"/>
+            </Index>
+            <Index name="61bdf048-c09f-4cf5-8b47-35ba28c0580c">
+                <Frame point="384 192"/>
+            </Index>
+            <Index name="c8650c34-30ec-42c5-8dc3-7652ba4034ff">
+                <Frame point="480 192"/>
+            </Index>
+            <Index name="d2093f3c-178c-4220-bfe0-e8a3d87f96c0">
+                <Frame point="576 192"/>
+            </Index>
+            <Index name="256fde90-4225-4c22-b107-fcaabe2bec9c">
+                <Frame point="672 192"/>
+            </Index>
+            <Index name="c0159b96-edf3-46cd-9fbe-96ee1126304b">
+                <Frame point="768 192"/>
+            </Index>
+            <Index name="8d601982-4608-4d5e-bb9e-e4041486f7c7">
+                <Frame point="864 192"/>
+            </Index>
+            <Index name="712a5ebd-0793-49ba-b1ef-681a8fdceba6">
+                <Frame point="0 288"/>
+            </Index>
+            <Index name="d1840356-ad77-4505-a9a0-10d11a77986f">
+                <Frame point="96 288"/>
+            </Index>
+            <Index name="79cc711e-7094-4029-8419-bbbf8f08c6f2">
+                <Frame point="192 288"/>
+            </Index>
+            <Index name="ac0b5b0a-14e1-4b31-8944-0a351fbfcc67">
+                <Frame point="288 288"/>
+            </Index>
+            <Index name="cb7305b2-d8b5-4302-aff3-6cdd9212ca64">
+                <Frame point="384 288"/>
+            </Index>
+            <Index name="54d84731-d9ec-435d-bc9d-d48e0763b1bf">
+                <Frame point="480 288"/>
+            </Index>
+            <Index name="54d8ef21-357d-48a3-a66d-40446f6bb686">
+                <Frame point="576 288"/>
+            </Index>
+            <Index name="e243f642-6934-42bb-8cdd-f8ff1704d411">
+                <Frame point="672 288"/>
+            </Index>
+            <Index name="2c4a2633-153a-4800-ba3d-2ac0d993b9c8">
+                <Frame point="768 288"/>
+            </Index>
+            <Index name="9a3e478c-2224-44fa-887c-239965bd05ad">
+                <Frame point="864 288"/>
+            </Index>
+            <Index name="42c8e4fc-0c38-4aa8-80ea-1835dd982d7c">
+                <Frame point="0 384"/>
+            </Index>
+            <Index name="4d807f6b-7cdb-41e8-81e2-d87a599422a7">
+                <Frame point="96 384"/>
+            </Index>
+            <Index name="b5cf212b-331e-46e3-9a72-5e8bc2b9a5b7">
+                <Frame point="192 384"/>
+            </Index>
+            <Index name="86128cfa-5c90-4d7c-a9eb-fff9490f9ef9">
+                <Frame point="288 384"/>
+            </Index>
+            <Index name="d22164ab-fba8-4243-9059-77abc82eb995">
+                <Frame point="384 384"/>
+            </Index>
+            <Index name="0bc74539-df8a-47c7-aad8-d55d809a01e4">
+                <Frame point="480 384"/>
+            </Index>
+            <Index name="e77d9577-589a-446b-96c1-f6d0d7495489">
+                <Frame point="576 384"/>
+            </Index>
+            <Index name="99477093-e819-4199-b62a-fda6143aae89">
+                <Frame point="672 384"/>
+            </Index>
+            <Index name="c10a77d5-3357-4cb4-8113-a2cbe69c7ff2">
+                <Frame point="768 384"/>
+            </Index>
+            <Index name="bc69cb3b-7e0c-4c36-805d-f8d89fcfced3">
+                <Frame point="864 384"/>
+            </Index>
+            <Index name="9cd8288c-5a19-479f-af47-9eb55230ade2">
+                <Frame point="0 480"/>
+            </Index>
+            <Index name="628fd350-577d-413f-82a8-7f08a83de3d8">
+                <Frame point="96 480"/>
+            </Index>
+            <Index name="1dcd74ca-39ba-4b00-a36a-3381b25055f4">
+                <Frame point="192 480"/>
+            </Index>
+            <Index name="deabb19a-1acd-4bbf-8bd2-f8f17410170b">
+                <Frame point="288 480"/>
+            </Index>
+            <Index name="63695efd-0862-49f2-ace6-4d1758147fae">
+                <Frame point="384 480"/>
+            </Index>
+            <Index name="27a221b1-9809-4df1-901a-caafe119c9b6">
+                <Frame point="480 480"/>
+            </Index>
+            <Index name="7ab0cac7-b055-4283-b0bc-f85dd4d0416b">
+                <Frame point="576 480"/>
+            </Index>
+            <Index name="22beade5-38ca-47b4-a2ee-32403f58a862">
+                <Frame point="672 480"/>
+            </Index>
+            <Index name="4b6d2bee-d0f1-4e56-96f0-d2596388cad2">
+                <Frame point="768 480"/>
+            </Index>
+            <Index name="bee966b0-b5e5-41da-b992-5d363ab85ae4">
+                <Frame point="864 480"/>
+            </Index>
+            <Index name="9edb6f7c-fb44-4348-a1c4-8afb41b92d8a">
+                <Frame point="0 576"/>
+            </Index>
+            <Index name="9c82a525-8a8b-4483-9595-505aaa042486">
+                <Frame point="96 576"/>
+            </Index>
+            <Index name="64051718-a3f1-422b-bda3-277efa0c4545">
+                <Frame point="192 576"/>
+            </Index>
+            <Index name="38e41fb5-dd50-4294-829d-a517f0282fed">
+                <Frame point="288 576"/>
+            </Index>
+            <Index name="1c6756ca-3a60-4dcb-a5d1-353edf818308">
+                <Frame point="384 576"/>
+            </Index>
+            <Index name="eb1ef696-5c05-4662-9e47-fe1e0875ff84">
+                <Frame point="480 576"/>
+            </Index>
+            <Index name="93c27ab2-4930-4654-ba1c-bcfe35e966f6">
+                <Frame point="576 576"/>
+            </Index>
+            <Index name="aa4c9c5e-7fc6-4c27-967f-c550e551c872">
+                <Frame point="672 576"/>
+            </Index>
+            <Index name="6a43fff2-8c6d-4460-9f44-e5483b5267dd">
+                <Frame point="768 576"/>
+            </Index>
+            <Index name="f5098301-1693-457b-8efc-83b3504105ac">
+                <Frame point="864 576"/>
+            </Index>
+            <Index name="4ec64cda-1a5b-4465-88b4-5ea452c4a556">
+                <Frame point="0 672"/>
+            </Index>
+            <Index name="47ece75a-bfca-4e8a-b618-4f609fcea0da">
+                <Frame point="96 672"/>
+            </Index>
+            <Index name="4ce00048-f735-4fab-b978-5f405e60f48f">
+                <Frame point="192 672"/>
+            </Index>
+            <Index name="6d92d8e7-25e9-4698-b83d-a64dc97978c8">
+                <Frame point="288 672"/>
+            </Index>
+            <Index name="b5cdd503-fe1c-482b-86ab-6a5d2cc4fc8f">
+                <Frame point="384 672"/>
+            </Index>
+            <Index name="59f6951a-a450-42bf-ad03-54567cb70245">
+                <Frame point="480 672"/>
+            </Index>
+            <Index name="e49b210a-0d46-4f06-bcd8-08862379d156">
+                <Frame point="576 672"/>
+            </Index>
+            <Index name="9a3058f3-6771-464f-a3e0-25d247f1422f">
+                <Frame point="672 672"/>
+            </Index>
+            <Index name="004bb5ee-34ba-484a-924b-31412d898e7e">
+                <Frame point="768 672"/>
+            </Index>
+            <Index name="f47612db-e035-4d62-81e2-64fc3453ccc3">
+                <Frame point="864 672"/>
+            </Index>
+            <Index name="5ff56026-7af2-4644-b30c-f0b43230093f">
+                <Frame point="0 768"/>
+            </Index>
+            <Index name="e59afe5b-2c5f-4934-95d7-8c187b22fd6d">
+                <Frame point="96 768"/>
+            </Index>
+            <Index name="c654a023-ca53-4109-9f18-d297c18e9a02">
+                <Frame point="192 768"/>
+            </Index>
+            <Index name="de7eea5b-9262-476b-a5bb-238d0e91f81f">
+                <Frame point="288 768"/>
+            </Index>
+            <Index name="9769c4b2-67f0-446b-a00d-ee432218b038">
+                <Frame point="384 768"/>
+            </Index>
+            <Index name="b4831236-a9b3-4422-92da-803f9252a279">
+                <Frame point="480 768"/>
+            </Index>
+            <Index name="da2efa37-370d-4848-bc2e-2bae01173ce1">
+                <Frame point="576 768"/>
+            </Index>
+        </Group>
+    </Resource>
+</MyGUI>

@@ -1,0 +1,246 @@
+{
+	"partList": [
+		{
+			"uuid": "f08d772f-9851-400f-a014-d847900458a7",
+			"name": "obj_interactive_fridge",
+			"renderable": {
+	"lodList": [
+		{
+			"minViewSize": 30,
+			"mesh": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_fridge.fbx",
+			"subMeshMap": {
+				"fridge": {
+					"material": "DifAsgNor",
+					"textureList": [
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_fridge_dif.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_fridge_asg.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_fridge_nor.tga"
+					]
+				}
+			}
+		},
+		{
+			"mesh": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_fridge_lod1.fbx",
+			"subMeshMap": {
+				"fridge": {
+					"material": "DifAsg",
+					"textureList": [
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_fridge_dif.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_fridge_asg.tga",
+						""
+					]
+				}
+			}
+		}
+	]
+},
+			"color": "3e9ffe",
+			"box": {
+				"x": 3,
+				"y": 3,
+				"z": 2
+			},
+			"scripted": {
+				"filename": "$SURVIVAL_DATA/Scripts/game/containers/ConsumableContainer.lua",
+				"classname": "FoodContainer",
+				"data": {}
+			},
+			"rotationSet": "PropY",
+			"sticky": "-X+X-Y+Y-Z",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"density": 4,
+				"durability": 3,
+				"friction": 4,
+				"buoyancy": 6
+			},
+			"flammable": false,
+			"density": 1250.0
+		},
+		{
+			"uuid": "d0afb527-e786-4a22-a907-6da7e7cba8cb",
+			"name": "obj_interactive_locker",
+			"renderable": {
+	"lodList": [
+		{
+			"minViewSize": 55,
+			"subMeshList": [
+				{
+					"textureList": [
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_locker_dif.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_locker_asg.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_locker_nor.tga"
+					],
+					"material": "DifAsgNor"
+				}
+			],
+			"mesh": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_locker.mesh"
+		},
+		{
+			"subMeshList": [
+				{
+					"textureList": [
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_locker_dif.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_locker_asg.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_locker_nor.tga"
+					],
+					"material": "DifAsgNor"
+				}
+			],
+			"mesh": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_locker_lod1.fbx"
+		}
+	]
+},
+			"color": "3e9ffe",
+			"box": {
+				"x": 3,
+				"y": 7,
+				"z": 2
+			},
+			"chest": {
+				"slots": 4
+			},
+			"rotationSet": "PropY",
+			"sticky": "-X+X-Y+Y-Z",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"density": 4,
+				"durability": 3,
+				"friction": 4,
+				"buoyancy": 6
+			},
+			"flammable": false,
+			"density": 250.0
+		},
+		{
+			"uuid": "90dbaebf-8ea1-4a5a-8f6f-86ddde77c6c8",
+			"name": "obj_interactive_filecabinet",
+			"renderable": {
+	"lodList": [
+		{
+			"minViewSize": 55,
+			"mesh": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_filecabinet_closed.fbx",
+			"pose0": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_filecabinet_open.fbx",
+			"subMeshMap": {
+				"filecabinet": {
+					"material": "PoseAnimDifAsgNor",
+					"textureList": [
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_filecabinet_dif.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_filecabinet_asg.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_filecabinet_nor.tga"
+					]
+				}
+			}
+		},
+		{
+			"mesh": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_filecabinet_closed_lod1.fbx",
+			"pose0": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_filecabinet_open_lod1.fbx",
+			"subMeshMap": {
+				"filecabinet": {
+					"material": "PoseAnimDifAsgNor",
+					"textureList": [
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_filecabinet_dif.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_filecabinet_asg.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_filecabinet_nor.tga"
+					]
+				}
+			}
+		}
+	]
+},
+			"color": "beb16c",
+			"hull": {
+				"x": 2,
+				"y": 2,
+				"z": 3,
+				"col": "$SURVIVAL_DATA/Objects/Collision/obj_interactive_filecabinet.obj"
+			},
+			"chest": {
+				"slots": 3
+			},
+			"rotationSet": "PropYZ",
+			"sticky": "-Y+Y+X-X-Z",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"density": 7,
+				"durability": 7,
+				"friction": 4,
+				"buoyancy": 6
+			},
+			"flammable": false,
+			"density": 250.0
+		},
+		{
+			"uuid": "fcfae5e2-1df9-47d8-bb9a-30bec9b5b1f5",
+			"name": "obj_container_smallchest",
+			"renderable": {
+	"lodList": [
+		{
+			"minViewSize": 40,
+			"mesh": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_smallchest_off.fbx",
+			"pose0": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_smallchest_on.fbx",
+			"subMeshMap": {
+				"chest_extras": {
+					"material": "PoseAnimDifAsgNor",
+					"textureList": [
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_smallchest_extras_dif.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_smallchest_extras_asg.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_smallchest_extras_nor.tga"
+					]
+				},
+				"small_chest": {
+					"material": "PoseAnimDifAsgNor",
+					"textureList": [
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_smallchest_dif.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_smallchest_asg.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_smallchest_nor.tga"
+					]
+				}
+			}
+		},
+		{
+			"mesh": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_smallchest_lod1.fbx",
+			"subMeshMap": {
+				"chest_extras": {
+					"material": "DifAsgNor",
+					"textureList": [
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_smallchest_extras_dif.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_smallchest_extras_asg.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_smallchest_extras_nor.tga"
+					]
+				},
+				"small_chest": {
+					"material": "DifAsgNor",
+					"textureList": [
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_smallchest_dif.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_smallchest_asg.tga",
+						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_smallchest_nor.tga"
+					]
+				}
+			}
+		}
+	]
+},
+			"color": "df7f01",
+			"box": {
+				"x": 3,
+				"y": 2,
+				"z": 3
+			},
+			"chest": {
+				"slots": 20
+			},
+			"rotationSet": "PropY",
+			"sticky": "-Y",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"density": 8,
+				"durability": 6,
+				"friction": 5,
+				"buoyancy": 8
+			},
+			"flammable": false,
+			"density": 250.0
+		}
+	]
+}

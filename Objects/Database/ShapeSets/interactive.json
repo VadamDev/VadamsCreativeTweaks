@@ -1,0 +1,385 @@
+{
+	"partList": [
+		//GUNS
+		{
+			"uuid": "a575f255-b478-4487-bbef-0ef2c39d9ae8",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshMap": {
+							"tapebot_body": {
+								"material": "DifAsgNor",
+								"textureList": [
+									"$SURVIVAL_DATA/Character/Char_Tapebot/char_tapebot_body_dif.tga",
+									"$SURVIVAL_DATA/Character/Char_Tapebot/char_tapebot_body_asg.tga",
+									"$SURVIVAL_DATA/Character/Char_Tapebot/char_tapebot_body_nor.tga"
+								]
+							}
+						},
+						"mesh": "$SURVIVAL_DATA/Objects/Mesh/robotparts/obj_robotparts_tapebotshooter.fbx"
+					}
+				]
+			},
+			"color": "035cff",
+			"hull": {
+				"x": 1,
+				"y": 3,
+				"z": 3,
+				"margin": 0.25,
+				"col": "$SURVIVAL_DATA/Objects/Collision/obj_robotparts_tapebotshooter.obj"
+			},
+			"scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/Gun.lua",
+				"classname": "Gun",
+				"data": {
+					"projectile": "tape",
+					"effect": "TapeBot - Shoot",
+					"minForce": "125",
+					"maxForce": "135"
+				}
+			},
+			"rotationSet": "PropFull",
+			"sticky": "+Y-Y+Z-Z+X-X",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"density": 5,
+				"durability": 4,
+				"friction": 5,
+				"buoyancy": 4
+			},
+			"flammable": false,
+			"density": 250.0,
+			"qualityLevel": 0,
+			"restitution": 0.75
+		},
+		{
+			"uuid": "a575f255-b478-4487-bbef-0ef2c39d9ae7",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshMap": {
+							"tapebot_body": {
+								"material": "DifAsgNor",
+								"textureList": [
+									"$SURVIVAL_DATA/Character/Char_Tapebot/char_tapebot_body_dif.tga",
+									"$SURVIVAL_DATA/Character/Char_Tapebot/char_tapebot_body_asg.tga",
+									"$SURVIVAL_DATA/Character/Char_Tapebot/char_tapebot_body_nor.tga"
+								]
+							}
+						},
+						"mesh": "$SURVIVAL_DATA/Objects/Mesh/robotparts/obj_robotparts_tapebotshooter.fbx"
+					}
+				]
+			},
+			"color": "035cff",
+			"hull": {
+				"x": 1,
+				"y": 3,
+				"z": 3,
+				"margin": 0.25,
+				"col": "$SURVIVAL_DATA/Objects/Collision/obj_robotparts_tapebotshooter.obj"
+			},
+			"scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/Gun.lua",
+				"classname": "Gun",
+				"data": {
+					"projectile": "explosivetape",
+					"effect": "TapeBot - Shoot",
+					"minForce": "125",
+					"maxForce": "135"
+				}
+			},
+			"rotationSet": "PropFull",
+			"sticky": "+Y-Y+Z-Z+X-X",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"density": 5,
+				"durability": 4,
+				"friction": 5,
+				"buoyancy": 4
+			},
+			"flammable": false,
+			"density": 250.0,
+			"qualityLevel": 0,
+			"restitution": 0.75
+		},
+		{
+			"uuid": "4c1ac025-f34e-4075-b9c6-54596664bc1a",
+			"renderable": {
+				"lodList": [ 
+					 {
+					"subMeshMap": {
+							"mountablewatercanon": {
+								"material": "PoseAnimDifAsgNor",
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_watercanon_dif.tga",
+									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_watercanon_asg.tga",
+									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_watercanon_nor.tga"
+								]
+						}
+						},
+									"mesh": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_mountablewatercanon_off.fbx",
+									"pose0": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_mountablewatercanon_on.fbx"
+					}
+				]
+			},
+            "scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/Gun.lua",
+				"classname": "Gun",
+				"data": {
+					"projectile": "pesticide",
+					"effect": "FarmBot - Shoot",
+					"minForce": "10",
+					"maxForce": "14"
+				}
+			},
+						"color": "720a74",
+			"box": {
+				"x": 3, "y": 3, "z": 4
+			},
+			"density": 1250.0,
+			"physicsMaterial": "Metal",
+			"sticky": "-Z-Y+Y-X+X",			
+			"rotationSet": "PropYZ",
+			"qualityLevel": 4
+		},
+		{
+			"uuid": "9fae7e79-85bb-432d-9dca-d6c777cf16d1",
+			"renderable": {
+				"lodList": [ 
+					 {
+						"subMeshMap" : {
+							"mounted_spudgun": {
+								"textureList": [
+									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_mountablespudgun_dif.tga",
+									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_mountablespudgun_asg.tga",
+									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_mountablespudgun_nor.tga"
+								],
+								"material" : "PoseAnimDifAsgNor"
+							},
+							"barrel_basic": {
+									"textureList": [
+									"$GAME_DATA/Character/Char_Tools/Char_spudgun/Barrel/Barrel_basic/char_spudgun_barrel_basic_dif.tga",
+									"$GAME_DATA/Character/Char_Tools/Char_spudgun/Barrel/Barrel_basic/char_spudgun_barrel_basic_asg.tga",
+									"$GAME_DATA/Character/Char_Tools/Char_spudgun/Barrel/Barrel_basic/char_spudgun_barrel_basic_nor.tga"
+								],
+								"material" : "DifAsgNor"
+							}
+						},
+						"mesh": "$GAME_DATA/Objects/Mesh/interactive/obj_interactive_mountablespudgun_off.fbx",
+						"pose0": "$GAME_DATA/Objects/Mesh/interactive/obj_interactive_mountablespudgun_on.fbx"
+					}
+				]
+			},
+            "scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/Gun.lua",
+				"classname": "Gun",
+				"data": {
+					"projectile": "glowstick",
+					"effect": "Glowstick - Throw",
+					"minForce": "100",
+					"maxForce": "120"
+				}
+			},
+						"color": "FFFF00",
+			"hull": {
+				"x": 1, "y": 1, "z": 4,
+				"pointList": [
+					{ "x": -0.26, "y": -0.26, "z": 0.81 },
+					{ "x": 0.26, "y": -0.26, "z": 0.81 },
+					{ "x": -0.43, "y": 0.43, "z": 0.81 },
+					{ "x": 0.43, "y": 0.43, "z": 0.81 },
+					{ "x": -1.0, "y": 1.0, "z": -1.0 },
+					{ "x": 1.0, "y": 1.0, "z": -1.0 },
+					{ "x": -1.0, "y": -1.0, "z": -1.0 },
+					{ "x": 1.0, "y": -1.0, "z": -1.0 },
+					{ "x": 1.0, "y": 1.0, "z": -0.07 },
+					{ "x": -1.0, "y": 1.0, "z": -0.07 },
+					{ "x": -1.0, "y": 1.0, "z": -0.07 },
+					{ "x": 1.0, "y": -1.0, "z": -0.07 }
+				]
+			},
+			"density": 1250.0,
+			"physicsMaterial": "Metal",
+			"sticky": "-Z-Y+Y-X+X",			
+			"rotationSet": "PropYZ",
+			"qualityLevel": 4
+		},
+		//ENCRYPTORS
+		{
+			"uuid": "c8b1bc7b-304e-44ce-9ca1-937b8e69d70c",
+			"name": "obj_interactive_encryptor_destruction",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_encryptor_destruction_dif.tga",
+									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_encryptor_destruction_asg.tga",
+									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_encryptor_destruction_nor.tga"
+								],
+								"material": "DifAsgNor"
+							}
+						],
+						"mesh": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_encryptor_destruction.fbx"
+					}
+				]
+			},
+			"color": "c36512",
+			"box": {
+				"x": 5,
+				"y": 4,
+				"z": 1
+			},
+			"scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/Encryptor.lua",
+				"classname": "Encryptor",
+				"data": {
+					"type": "Protector"
+				}
+			},
+			"rotationSet": "PropZ",
+			"sticky": "-Z",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"density": 3,
+				"durability": 6,
+				"friction": 6,
+				"buoyancy": 3
+			},
+			"flammable": false
+		},
+		{
+			"uuid": "8fd2cf31-70b3-499a-bfb0-7e3d2c580258",
+			"name": "obj_interactive_encryptor_connection",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_encryptor_connection_dif.tga",
+									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_encryptor_connection_asg.tga",
+									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_encryptor_connection_nor.tga"
+								],
+								"material": "DifAsgNor"
+							}
+						],
+						"mesh": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_encryptor_connection.fbx"
+					}
+				]
+			},
+			"color": "2f97df",
+			"box": {
+				"x": 5,
+				"y": 4,
+				"z": 1
+			},
+			"scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/Encryptor.lua",
+				"classname": "Encryptor",
+				"data": {
+					"type": "Encryptor"
+			    }
+			},
+			"rotationSet": "PropZ",
+			"sticky": "-Z",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"density": 3,
+				"durability": 6,
+				"friction": 6,
+				"buoyancy": 3
+			},
+			"flammable": false
+		},
+		{
+			"uuid": "ff09d816-843a-43e9-aab6-dc35e73787fd",
+			"name": "obj_survivalobject_cardreader",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshMap": {
+							"char_keycardreader_mat": {
+								"textureList": [
+									"$SURVIVAL_DATA/Character/Char_keycardreader/char_keycardreader_dif.tga",
+									"$SURVIVAL_DATA/Character/Char_keycardreader/char_keycardreader_asg.tga",
+									"$SURVIVAL_DATA/Character/Char_keycardreader/char_keycardreader_nor.tga"
+								],
+								"material": "SkelAnimDifAsgNor"
+							},
+							"char_keycardreader_keycard_mat": {
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/survivalobject/obj_survivalobject_keycard_dif.tga",
+									"$SURVIVAL_DATA/Objects/Textures/survivalobject/obj_survivalobject_keycard_asg.tga",
+									"$SURVIVAL_DATA/Objects/Textures/survivalobject/obj_survivalobject_keycard_nor.tga"
+								],
+								"material": "SkelAnimDifAsgNor"
+							},
+							"char_keycardreader_screen_mat": {
+								"textureList": [
+									"$SURVIVAL_DATA/Character/Char_keycardreader/char_keycard_screen_dif.tga",
+									"$SURVIVAL_DATA/Character/Char_keycardreader/char_keycard_screen_asg.tga",
+									"$SURVIVAL_DATA/Character/Char_keycardreader/char_keycard_screen_nor.tga"
+								],
+								"material": "UVAnimDifAsgNor",
+								"custom": {
+									"uv0": {
+										"u": 0.25,
+										"v": 0.25
+									}
+								}
+							}
+						},
+						"mesh": "$SURVIVAL_DATA/Character/Char_keycardreader/char_keycardreader.dae",
+						"includes": [
+							"POSITION",
+							"UV0",
+							"NORMAL",
+							"TANGENTS",
+							"BLEND_INDICES",
+							"BLEND_WEIGHTS"
+						],
+						"animationList": [
+							{
+								"name": "keycardreader_activate",
+								"file": "$SURVIVAL_DATA/Character/Char_keycardreader/ani_char_keycardreader_activate.dae"
+							}
+						],
+						"maxViewDistance": 1000.0
+					}
+				]
+			},
+			"color": "df7f01",
+			"box": {
+				"x": 5,
+				"y": 6,
+				"z": 5
+			},
+			"scripted": {
+				"filename": "$MOD_DATA/Scripts/KeycardReader.lua",
+				"classname": "KeycardReader"
+			},
+			"rotationSet": "PropZ",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"density": 5,
+				"durability": 10,
+				"friction": 5,
+				"buoyancy": 5
+			},
+			"flammable": false,
+			"restrictions": {
+				"buildable": false,
+				"paintable": false
+			}
+		}
+	]
+}
