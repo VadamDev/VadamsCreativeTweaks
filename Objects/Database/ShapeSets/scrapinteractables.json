@@ -85,8 +85,7 @@
 				"friction": 5,
 				"buoyancy": 2
 			},
-			"flammable": true,
-			"qualityLevel": 3
+			"flammable": true
 		},
 		{
 			"uuid": "847daf20-02bf-4170-8699-9ab106acd29a",
@@ -161,8 +160,7 @@
 				"friction": 5,
 				"buoyancy": 2
 			},
-			"flammable": true,
-			"qualityLevel": 3
+			"flammable": true
 		},
 		{
 			"uuid": "59f6951a-a450-42bf-ad03-54567cb70245",
@@ -201,9 +199,7 @@
 				"friction": 6,
 				"buoyancy": 4
 			},
-			"flammable": true,
-			"density": 1250.0,
-			"qualityLevel": 3
+			"flammable": true
 		},
 		{
 			"uuid": "c96ab903-f238-4bae-a614-28a758716d00",
@@ -246,90 +242,7 @@
 				"friction": 5,
 				"buoyancy": 2
 			},
-			"flammable": true,
-			"density": 1250.0,
-			"qualityLevel": 5
-		},
-		{
-			"uuid": "4146d3bf-3e27-4f03-84a9-bc477c045861",
-			"name": "ScrapThruster",
-			"renderable": {
-	"lodList": [
-		{
-			"minViewSize": 45,
-			"subMeshList": [
-				{
-					"textureList": [
-									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_makeshiftengine_dif.tga",
-									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_makeshiftengine_asg.tga",
-									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_makeshiftengine_nor.tga"
-					],
-					"material": "DifAsgNor"
-				},
-				{
-					"textureList": [
-						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_thruster_01_dif.tga",
-						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_thruster_01_asg.tga",
-						"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_thruster_01_nor.tga"
-					],
-					"material": "DifAsgNor"
-				}
-			],
-			"mesh": "$MOD_DATA/Objects/Mesh/interactive/scrapthruster.fbx"
-		}
-	]
-},
-			"color": "df7f01",
-			"box": {
-				"x": 2,
-				"y": 2,
-				"z": 5
-			},
-			"thruster": {
-				"levels": [
-					{
-						"averageForce": 222.22,
-						"forceVariation": 159.2592
-					},
-					{
-						"averageForce": 291.33,
-						"forceVariation": 288.8889
-					},
-					{
-						"averageForce": 945,
-						"forceVariation": 533.333
-					},
-					{
-						"averageForce": 1463,
-						"forceVariation": 740
-					},
-					{
-						"averageForce": 3424,
-						"forceVariation": 2745
-					},
-					{
-						"averageForce": 5875,
-						"forceVariation": 3741
-					},
-					{
-						"averageForce": 8313,
-						"forceVariation": 8312.99999999999999999999999
-					}
-				],
-				"effect": "Thruster - Level 1"
-			},
-			"rotationSet": "PropY",
-			"sticky": "All",
-			"physicsMaterial": "Mechanical",
-			"ratings": {
-				"density": 7,
-				"durability": 3,
-				"friction": 3,
-				"buoyancy": 1
-			},
-			"flammable": true,
-			"density": 250.0,
-			"carryItem": false
+			"flammable": true
 		}
 	]
 }

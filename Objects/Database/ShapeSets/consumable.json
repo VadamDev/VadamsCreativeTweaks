@@ -86,38 +86,18 @@
 			"restrictions": {
 				"erasable": true
 			},
+			"edible": {
+				"hpGain": 10,
+				"foodGain": 25,
+				"waterGain": 35
+			},
 			"autoTool": "2bff990a-0e74-43c7-b7dc-889b3a086fa3"
 		},
 		{
 			"uuid": "54d84731-d9ec-435d-bc9d-d48e0763b1bf",
 			"name": "obj_consumable_pizzaburger",
-			"renderable": {
-				"lodList": [
-		{
-			"maxViewDistance": 1500,
-            "mesh": "$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger.dae",
-			"subMeshMap": {
-				"pizza_burger": {
-					"material": "DifAsgNor",
-					"textureList": [
-                        "$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_dif.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_asg.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_nor.tga"
-					]
-				},
-				"pizza_burger_lettuce": {
-					"material": "DifAsgNorAlpha",
-					"textureList": [
-                        "$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_lettuce_dif.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_lettuce_asg.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_lettuce_nor.tga"
-					]
-				}
-			}
-		}
-	]
-			},
-			"color": "ee7701",
+			"renderable": "$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/obj_consumable_pizzaburger.rend",
+			"color": "3e9ffe",
 			"hull": {
 				"x": 2,
 				"y": 2,
@@ -138,38 +118,18 @@
 			"restrictions": {
 				"erasable": true
 			},
+			"edible": {
+				"hpGain": 100,
+				"foodGain": 100,
+				"waterGain": 100
+			},
 			"autoTool": "2bff990a-0e74-43c7-b7dc-889b3a086fa3"
 		},
 		{
 			"uuid": "54d8ef21-357d-48a3-a66d-40446f6bb686",
 			"name": "obj_consumable_carrotburger",
-			"renderable": {
-				"lodList": [
-		{
-			"maxViewDistance": 1500,
-            "mesh": "$SURVIVAL_DATA/Character/Char_Tools/Char_carrotburger/char_carrotburger.dae",
-			"subMeshMap": {
-				"carrot_burger": {
-					"material": "DifAsgNor",
-					"textureList": [
-                        "$SURVIVAL_DATA/Character/Char_Tools/Char_carrotburger/char_carrotburger_dif.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_carrotburger/char_carrotburger_asg.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_carrotburger/char_carrotburger_nor.tga"
-					]
-				},
-				"pizza_burger_lettuce": {
-					"material": "DifAsgNorAlpha",
-					"textureList": [
-                        "$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_lettuce_dif.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_lettuce_asg.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_lettuce_nor.tga"
-					]
-				}
-			}
-		}
-	]
-			},
-			"color": "fe9124",
+			"renderable": "$SURVIVAL_DATA/Character/Char_Tools/Char_carrotburger/obj_consumable_carrotburger.rend",
+			"color": "ccffcc",
 			"hull": {
 				"x": 2,
 				"y": 2,
@@ -190,6 +150,11 @@
 			"stackSize": 5,
 			"restrictions": {
 				"erasable": true
+			},
+			"edible": {
+				"hpGain": 100,
+				"foodGain": 100,
+				"waterGain": 100
 			},
 			"autoTool": "2bff990a-0e74-43c7-b7dc-889b3a086fa3"
 		},
@@ -221,7 +186,7 @@
 					}
 				]
 			},
-			"color": "ee7701",
+			"color": "3e9ffe",
 			"box": {
 				"x": 1,
 				"y": 2,
@@ -242,118 +207,6 @@
 				"erasable": true
 			},
 			"autoTool": "87cf94fa-a52a-47bd-8d62-47a2e10fe2af"
-		},
-		{
-			"uuid": "4d807f6b-7cdb-41e8-81e2-d87a599422a7",
-			"renderable": {
-				"lodList": [
-		{
-			"maxViewDistance": 1500,
-            "mesh": "$SURVIVAL_DATA/Character/Char_Cookbot/cookbot_food_01.fbx",
-			"subMeshMap": {
-				"pizza_burger": {
-					"material": "DifAsgNor",
-					"textureList": [
-                        "$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_dif.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_asg.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_nor.tga"
-					]
-				}
-			}
-		}
-	]
-			},
-			"color": "cbcbcb",
-			"box": {
-				"x": 1,
-				"y": 1,
-				"z": 1
-			},
-			"rotationSet": "PropZY"
-		},
-		{
-			"uuid": "b5cf212b-331e-46e3-9a72-5e8bc2b9a5b7",
-			"renderable": {
-				"lodList": [
-		{
-			"maxViewDistance": 1500,
-            "mesh": "$SURVIVAL_DATA/Character/Char_Cookbot/cookbot_food_02.fbx",
-			"subMeshMap": {
-				"pizza_burger": {
-					"material": "DifAsgNor",
-					"textureList": [
-                        "$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_dif.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_asg.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_pizzaburger/char_pizzaburger_nor.tga"
-					]
-				}
-			}
-		}
-	]
-			},
-			"color": "cbcbcb",
-			"box": {
-				"x": 1,
-				"y": 1,
-				"z": 1
-			},
-			"rotationSet": "PropZY"
-		},
-		{
-			"uuid": "86128cfa-5c90-4d7c-a9eb-fff9490f9ef9",
-			"renderable": {
-				"lodList": [
-		{
-			"maxViewDistance": 1500,
-            "mesh": "$SURVIVAL_DATA/Character/Char_Cookbot/cookbot_food_03.fbx",
-			"subMeshMap": {
-				"carrot_burger": {
-					"material": "DifAsgNorAlphaFlip",
-					"textureList": [
-                        "$SURVIVAL_DATA/Character/Char_Tools/Char_carrotburger/char_carrotburger_dif.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_carrotburger/char_carrotburger_asg.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_carrotburger/char_carrotburger_nor.tga"
-					]
-				}
-			}
-		}
-	]
-			},
-			"color": "cbcbcb",
-			"box": {
-				"x": 1,
-				"y": 1,
-				"z": 1
-			},
-			"rotationSet": "PropZY"
-		},
-		{
-			"uuid": "d22164ab-fba8-4243-9059-77abc82eb995",
-			"renderable": {
-				"lodList": [
-		{
-			"maxViewDistance": 1500,
-            "mesh": "$SURVIVAL_DATA/Character/Char_Cookbot/cookbot_food_04.fbx",
-			"subMeshMap": {
-				"carrot_burger": {
-					"material": "DifAsgNorAlphaFlip",
-					"textureList": [
-                        "$SURVIVAL_DATA/Character/Char_Tools/Char_carrotburger/char_carrotburger_dif.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_carrotburger/char_carrotburger_asg.tga",
-						"$SURVIVAL_DATA/Character/Char_Tools/Char_carrotburger/char_carrotburger_nor.tga"
-					]
-				}
-			}
-		}
-	]
-			},
-			"color": "cbcbcb",
-			"box": {
-				"x": 1,
-				"y": 1,
-				"z": 1
-			},
-			"rotationSet": "PropZY"
 		},
 		{
 			"uuid": "2c4a2633-153a-4800-ba3d-2ac0d993b9c8",
@@ -403,6 +256,11 @@
 			"stackSize": 5,
 			"restrictions": {
 				"erasable": true
+			},
+			"edible": {
+				"hpGain": 0,
+				"foodGain": 10,
+				"waterGain": 40
 			},
 			"autoTool": "2bff990a-0e74-43c7-b7dc-889b3a086fa3"
 		},

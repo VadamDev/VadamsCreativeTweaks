@@ -1,49 +1,79 @@
+dofile("$MOD_DATA/Scripts/utils/UnitFinder.lua")
+
 -- Author VadamDev --
 
-Encryptor = class()
-Encryptor.maxParentCount = 1
+Encryptor = class( nil )
 Encryptor.connectionInput = sm.interactable.connectionType.logic
+Encryptor.maxParentCount = 1
 Encryptor.colorNormal = sm.color.new( 0x777777ff )
 Encryptor.colorHighlight = sm.color.new( 0x888888ff )
 
-Encryptor.wasActive = false
-Encryptor.interaction = true
+function Encryptor:server_onCreate()
+	self.wasActive = false
 
--- Events --
-function Encryptor.server_onFixedUpdate( self, timeStep )
-    local parent = self.interactable:getSingleParent()
-    self.active = parent and parent.active
+	self.saved = self.storage:load()
+	if self.saved == nil then
+		self.saved = {
+			active = false,
+			owner = nil
+		}
+	end
 
-	self:activate(self.active)
+	self.storage:save( self.saved )
+	self.network:setClientData( self.saved )
+
+	self:server_applyProtection( self.data["type"], self.saved.active )
 end
 
-function Encryptor.client_onInteract(self)
-	sm.gui.displayAlertText("Not work for the moment.\nYou can use switch for activate the encryption.")
-end
+-- Server
 
-function Encryptor.activate(self, active)
-	local shapeType = self.data["type"]
+function Encryptor:server_onFixedUpdate( dt )
+	if self.saved.owner == nil then
+		self.saved.owner = getPlayerById(getNearestPlayer(self.shape, 1, 512)):getName()
+		self:server_saveAndSyncData()
+	end
 
-	if active then
-		if not self.wasActive then
-			self:toggleAnimation(shapeType, active)
-			self:toggleProtection(shapeType, active)
+	local logicInteractable = self.interactable:getSingleParent()
+	local parentActive = logicInteractable and logicInteractable:isActive()
 
-			self.wasActive = true
-		end
-	else
-		if self.wasActive then
-			self:toggleAnimation(shapeType, active)
-			self:toggleProtection(shapeType, active)
+	if parentActive and not self.wasActive then
+		self.saved.active = true
+		self:server_saveAndSyncData()
 
-			self.wasActive = false
-		end
+		self:server_toggle()
+
+		self.wasActive = true
+	elseif not parentActive and self.wasActive then
+		self.saved.active = false
+		self:server_saveAndSyncData()
+
+		self:server_toggle()
+
+		self.wasActive = false
 	end
 end
 
--- Toggle Functions --
+function Encryptor:server_toggle()
+	local shapeType = self.data["type"]
 
-function Encryptor.toggleProtection(self, shapeType, state)
+	if self.saved.active then
+		if shapeType == "Encryptor" then
+			sm.effect.playEffect( "Encryptor - Activation", self.shape.worldPosition, nil, self.shape.worldRotation )
+		elseif shapeType == "Protector" then
+			sm.effect.playEffect( "Barrier - Activation", self.shape.worldPosition, nil, self.shape.worldRotation )
+		end
+	else
+		if shapeType == "Encryptor" then
+			sm.effect.playEffect( "Encryptor - Deactivation", self.shape.worldPosition, nil, self.shape.worldRotation )
+		elseif shapeType == "Protector" then
+			sm.effect.playEffect( "Barrier - Deactivation", self.shape.worldPosition, nil, self.shape.worldRotation )
+	    end
+	end
+
+	self:server_applyProtection( shapeType, self.saved.active )
+end
+
+function Encryptor:server_applyProtection( shapeType, state )
 	local body = self.shape:getBody()
 
 	if shapeType == "Encryptor" then
@@ -57,18 +87,27 @@ function Encryptor.toggleProtection(self, shapeType, state)
 	end
 end
 
-function Encryptor.toggleAnimation(self, shapeType, state)
+function Encryptor:server_saveAndSyncData()
+	self.storage:save( self.saved )
+	self.network:setClientData( self.saved )
+end
+
+function Encryptor:server_setActive( active )
+	self.saved.active = active
+	self.wasActive = not active
+	self:server_saveAndSyncData()
+end
+
+-- Client
+
+function Encryptor:client_onInteract( character, state )
 	if state then
-		if shapeType == "Encryptor" then
-			sm.effect.playEffect("Encryptor - Activation", self.shape.worldPosition, nil, self.shape.worldRotation)
-		elseif shapeType == "Protector" then
-			sm.effect.playEffect("Barrier - Activation", self.shape.worldPosition, nil, self.shape.worldRotation)
-		end
-	else
-		if shapeType == "Encryptor" then
-			sm.effect.playEffect("Encryptor - Deactivation", self.shape.worldPosition, nil, self.shape.worldRotation)
-		elseif shapeType == "Protector" then
-			sm.effect.playEffect("Barrier - Deactivation", self.shape.worldPosition, nil, self.shape.worldRotation)
-	    end
+		self.network:sendToServer("server_setActive", not self.saved.active)
+		self.network:sendToServer("server_toggle")
 	end
+end
+
+function Encryptor:client_canInteract( char )
+	sm.gui.setInteractionText("<p textShadow='false' bg='gui_keybinds_bg_orange' color='#66440C' spacing='9'>".. (self.saved.active and "ONLINE" or "OFFLINE") .."</p>", " | ", "<p textShadow='false' bg='gui_keybinds_bg_orange' color='#66440C' spacing='9'>"..(self.saved.owner == nil and "Unknow" or self.saved.owner).."</p>")
+	return self.interactable:getSingleParent() == nil and (self.saved.owner == nil and true or char:getPlayer():getName() == self.saved.owner)
 end

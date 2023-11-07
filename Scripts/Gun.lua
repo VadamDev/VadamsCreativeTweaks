@@ -1,5 +1,3 @@
--- Gun.lua --
-
 Gun = class()
 Gun.maxParentCount = 1
 Gun.connectionInput = sm.interactable.connectionType.logic

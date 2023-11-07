@@ -1,0 +1,213 @@
+{
+	"partList": [
+		//GUNS
+		{
+			"uuid": "a575f255-b478-4487-bbef-0ef2c39d9ae8",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshMap": {
+							"tapebot_body": {
+								"material": "DifAsgNor",
+								"textureList": [
+									"$SURVIVAL_DATA/Character/Char_Tapebot/char_tapebot_body_dif.tga",
+									"$SURVIVAL_DATA/Character/Char_Tapebot/char_tapebot_body_asg.tga",
+									"$SURVIVAL_DATA/Character/Char_Tapebot/char_tapebot_body_nor.tga"
+								]
+							}
+						},
+						"mesh": "$SURVIVAL_DATA/Objects/Mesh/robotparts/obj_robotparts_tapebotshooter.fbx"
+					}
+				]
+			},
+			"color": "035cff",
+			"hull": {
+				"x": 1,
+				"y": 3,
+				"z": 3,
+				"margin": 0.25,
+				"col": "$SURVIVAL_DATA/Objects/Collision/obj_robotparts_tapebotshooter.obj"
+			},
+			"scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/Gun.lua",
+				"classname": "Gun",
+				"data": {
+					"projectile": "tape",
+					"effect": "TapeBot - Shoot",
+					"minForce": "125",
+					"maxForce": "135"
+				}
+			},
+			"rotationSet": "PropFull",
+			"sticky": "+Y-Y+Z-Z+X-X",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"density": 5,
+				"durability": 4,
+				"friction": 5,
+				"buoyancy": 4
+			},
+			"flammable": false,
+			"density": 250.0,
+			"qualityLevel": 0,
+			"restitution": 0.75
+		},
+		{
+			"uuid": "a575f255-b478-4487-bbef-0ef2c39d9ae7",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshMap": {
+							"tapebot_body": {
+								"material": "DifAsgNor",
+								"textureList": [
+									"$SURVIVAL_DATA/Character/Char_Tapebot/char_tapebot_body_dif.tga",
+									"$SURVIVAL_DATA/Character/Char_Tapebot/char_tapebot_body_asg.tga",
+									"$SURVIVAL_DATA/Character/Char_Tapebot/char_tapebot_body_nor.tga"
+								]
+							}
+						},
+						"mesh": "$SURVIVAL_DATA/Objects/Mesh/robotparts/obj_robotparts_tapebotshooter.fbx"
+					}
+				]
+			},
+			"color": "035cff",
+			"hull": {
+				"x": 1,
+				"y": 3,
+				"z": 3,
+				"margin": 0.25,
+				"col": "$SURVIVAL_DATA/Objects/Collision/obj_robotparts_tapebotshooter.obj"
+			},
+			"scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/Gun.lua",
+				"classname": "Gun",
+				"data": {
+					"projectile": "explosivetape",
+					"effect": "TapeBot - Shoot",
+					"minForce": "125",
+					"maxForce": "135"
+				}
+			},
+			"rotationSet": "PropFull",
+			"sticky": "+Y-Y+Z-Z+X-X",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"density": 5,
+				"durability": 4,
+				"friction": 5,
+				"buoyancy": 4
+			},
+			"flammable": false,
+			"density": 250.0,
+			"qualityLevel": 0,
+			"restitution": 0.75
+		},
+		{
+			"uuid": "4c1ac025-f34e-4075-b9c6-54596664bc1a",
+			"renderable": {
+				"lodList": [ 
+					 {
+					"subMeshMap": {
+							"mountablewatercanon": {
+								"material": "PoseAnimDifAsgNor",
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_watercanon_dif.tga",
+									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_watercanon_asg.tga",
+									"$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_watercanon_nor.tga"
+								]
+						}
+						},
+									"mesh": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_mountablewatercanon_off.fbx",
+									"pose0": "$SURVIVAL_DATA/Objects/Mesh/interactive/obj_interactive_mountablewatercanon_on.fbx"
+					}
+				]
+			},
+            "scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/Gun.lua",
+				"classname": "Gun",
+				"data": {
+					"projectile": "pesticide",
+					"effect": "FarmBot - Shoot",
+					"minForce": "10",
+					"maxForce": "14"
+				}
+			},
+						"color": "720a74",
+			"box": {
+				"x": 3, "y": 3, "z": 4
+			},
+			"density": 1250.0,
+			"physicsMaterial": "Metal",
+			"sticky": "-Z-Y+Y-X+X",			
+			"rotationSet": "PropYZ",
+			"qualityLevel": 4
+		},
+		{
+			"uuid": "9fae7e79-85bb-432d-9dca-d6c777cf16d1",
+			"renderable": {
+				"lodList": [ 
+					 {
+						"subMeshMap" : {
+							"mounted_spudgun": {
+								"textureList": [
+									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_mountablespudgun_dif.tga",
+									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_mountablespudgun_asg.tga",
+									"$GAME_DATA/Objects/Textures/interactive/obj_interactive_mountablespudgun_nor.tga"
+								],
+								"material" : "PoseAnimDifAsgNor"
+							},
+							"barrel_basic": {
+									"textureList": [
+									"$GAME_DATA/Character/Char_Tools/Char_spudgun/Barrel/Barrel_basic/char_spudgun_barrel_basic_dif.tga",
+									"$GAME_DATA/Character/Char_Tools/Char_spudgun/Barrel/Barrel_basic/char_spudgun_barrel_basic_asg.tga",
+									"$GAME_DATA/Character/Char_Tools/Char_spudgun/Barrel/Barrel_basic/char_spudgun_barrel_basic_nor.tga"
+								],
+								"material" : "DifAsgNor"
+							}
+						},
+						"mesh": "$GAME_DATA/Objects/Mesh/interactive/obj_interactive_mountablespudgun_off.fbx",
+						"pose0": "$GAME_DATA/Objects/Mesh/interactive/obj_interactive_mountablespudgun_on.fbx"
+					}
+				]
+			},
+            "scripted" : 
+			{
+				"filename": "$MOD_DATA/Scripts/Gun.lua",
+				"classname": "Gun",
+				"data": {
+					"projectile": "glowstick",
+					"effect": "Glowstick - Throw",
+					"minForce": "100",
+					"maxForce": "120"
+				}
+			},
+						"color": "FFFF00",
+			"hull": {
+				"x": 1, "y": 1, "z": 4,
+				"pointList": [
+					{ "x": -0.26, "y": -0.26, "z": 0.81 },
+					{ "x": 0.26, "y": -0.26, "z": 0.81 },
+					{ "x": -0.43, "y": 0.43, "z": 0.81 },
+					{ "x": 0.43, "y": 0.43, "z": 0.81 },
+					{ "x": -1.0, "y": 1.0, "z": -1.0 },
+					{ "x": 1.0, "y": 1.0, "z": -1.0 },
+					{ "x": -1.0, "y": -1.0, "z": -1.0 },
+					{ "x": 1.0, "y": -1.0, "z": -1.0 },
+					{ "x": 1.0, "y": 1.0, "z": -0.07 },
+					{ "x": -1.0, "y": 1.0, "z": -0.07 },
+					{ "x": -1.0, "y": 1.0, "z": -0.07 },
+					{ "x": 1.0, "y": -1.0, "z": -0.07 }
+				]
+			},
+			"density": 1250.0,
+			"physicsMaterial": "Metal",
+			"sticky": "-Z-Y+Y-X+X",			
+			"rotationSet": "PropYZ",
+			"qualityLevel": 4
+		}
+	]
+}

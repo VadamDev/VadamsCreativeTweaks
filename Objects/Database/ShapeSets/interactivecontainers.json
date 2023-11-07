@@ -67,9 +67,6 @@
 				"buoyancy": 6
 			},
 			"flammable": false,
-			"restrictions": {
-				"usable": true
-			},
 			"pipe": {
 				"openings": [
 					{
@@ -153,9 +150,6 @@
 				"buoyancy": 6
 			},
 			"flammable": false,
-			"restrictions": {
-				"usable": true
-			},
 			"pipe": {
 				"openings": [
 					{
@@ -248,9 +242,6 @@
 				"buoyancy": 6
 			},
 			"flammable": false,
-			"restrictions": {
-				"usable": true
-			},
 			"pipe": {
 				"openings": [
 					{

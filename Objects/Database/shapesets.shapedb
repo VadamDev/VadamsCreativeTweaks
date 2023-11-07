@@ -1,0 +1,18 @@
+{
+	"shapeSetList": [
+		"$CONTENT_DATA/Objects/Database/ShapeSets/customGuns.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/loot.json",
+
+		"$CONTENT_DATA/Objects/Database/ShapeSets/consumable.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/cookbot.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/effect_proxies.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/interactive.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/interactivecontainers.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/outfitpackage.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/survivalobject.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/plantables.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/scrapinteractables.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/spaceship.json",
+		"$CONTENT_DATA/Objects/Database/ShapeSets/packingcrates.json"
+	]
+}

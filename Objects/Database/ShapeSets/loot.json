@@ -1,0 +1,108 @@
+{
+	"partList": [
+		{
+			"uuid": "2769bf0a-c190-4e20-b204-d50e03e48208",
+			"color": "ffffff",
+			"box": {
+				"x": 5,
+				"y": 4,
+				"z": 4
+			},
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshMap": {
+							"Lootbox": {  
+								"material": "DifAsgNor",
+								"textureList": [
+									"$SURVIVAL_DATA/Harvestables/Textures/Loot/hvs_lootcrate01_dif.tga",
+									"$SURVIVAL_DATA/Harvestables/Textures/Loot/hvs_lootcrate01_asg.tga",
+									"$SURVIVAL_DATA/Harvestables/Textures/Loot/hvs_lootcrate01_nor.tga"
+								]
+							},
+							"lightcone_mat": {  
+								"material": "LightCone",
+								"textureList": [
+									"$SURVIVAL_DATA/Harvestables/Textures/Loot/hvs_lootcrate_lightcone_dif.tga", 
+									"",
+									""
+								]
+							}
+						},
+						"mesh": "$SURVIVAL_DATA/Harvestables/Mesh/Loot/hvs_lootcrate.fbx"
+					}
+				]
+			},
+			"scripted": {
+				"filename": "$CONTENT_DATA/Scripts/LootCrate.lua",
+				"classname": "LootCrate",
+				"data": {
+					"destroyEffect": "LootCrate - Destroy",
+					"staticDestroyEffect": "LootCrate - DestroyGlow"
+				}
+			},
+			"rotationSet": "PropY",
+			"sticky": "-Y",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"density": 7,
+				"durability": 7,
+				"friction": 6,
+				"buoyancy": 1
+			},
+			"flammable": false
+		},
+		{
+			"uuid": "2bc56c7f-95ea-4a4d-9a0d-20986c64a115",
+			"color": "ffffff",
+			"box": {
+				"x": 5,
+				"y": 4,
+				"z": 4
+			},
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshMap": {
+							"Lootbox": {  
+								"material": "DifAsgNor",
+								"textureList": [
+									"$SURVIVAL_DATA/Harvestables/Textures/Loot/hvs_epic_lootcrate01_dif.tga",
+									"$SURVIVAL_DATA/Harvestables/Textures/Loot/hvs_lootcrate01_asg.tga",
+									"$SURVIVAL_DATA/Harvestables/Textures/Loot/hvs_lootcrate01_nor.tga"
+								]
+							},
+							"lightcone_mat": {  
+								"material": "LightCone",
+								"textureList": [
+									"$SURVIVAL_DATA/Harvestables/Textures/Loot/hvs_lootcrate_lightcone_dif.tga", 
+									"",
+									""
+								]
+							}
+						},
+						"mesh": "$SURVIVAL_DATA/Harvestables/Mesh/Loot/hvs_lootcrate.fbx"
+					}
+				]
+			},
+			"scripted": {
+				"filename": "$CONTENT_DATA/Scripts/LootCrate.lua",
+				"classname": "LootCrate",
+				"data": {
+					"destroyEffect": "LootCrate - EpicDestroy",
+					"staticDestroyEffect": "LootCrate - DestroyGlow"
+				}
+			},
+			"rotationSet": "PropY",
+			"sticky": "-Y",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"density": 7,
+				"durability": 7,
+				"friction": 6,
+				"buoyancy": 1
+			},
+			"flammable": false
+		}
+	]
+}
